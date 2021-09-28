@@ -12,9 +12,11 @@ const AddTask = ({onAdd}) => {
             alert('please add alert')
             return
         }
+        //object key should be called day
+        const day = dateTime
 
         //pass object back
-        onAdd({text, dateTime, dateTime})
+        onAdd({text, day, reminder})
 
         //reset values
         setText('')
